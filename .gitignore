@@ -1,1 +1,38 @@
-/target
+# CargoとRust関係
+/target/
+/Cargo.lock
+
+# IDE関連（将来VS CodeやJetBrainsなど使う場合）
+*.rs.bk
+**/*.swp
+.idea/
+.vscode/
+
+# テスト・一時ファイル
+*.log
+*.tmp
+*.bak
+*.old
+
+# バイナリファイル（手動ビルド時など）
+*.exe
+*.out
+*.bin
+*.obj
+*.dll
+*.so
+*.dylib
+
+# macOS, Linux, Windows共通の不要ファイル
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# ドキュメント生成物（将来的に `cargo doc` を使うなら）
+/doc/
+
+# ワークスペースや一時ファイル
+*.cache
+*.lock
+*.pid

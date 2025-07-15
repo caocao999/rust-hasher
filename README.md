@@ -9,15 +9,15 @@ SHA-256 / SHA-512 / MD5 を選択可能で、標準出力またはファイル�
    ```bash
    rustc --version
 
-# プロジェクトディレクトリに移動し、ビルドします：
-```cargo build --release
+## プロジェクトディレクトリに移動し、ビルドします：
+   ```cargo build --release
 
-# 実行ファイルは target/release/hash.exe に生成されます（Windowsの場合）
+## 実行ファイルは target/release/hash.exe に生成されます（Windowsの場合）
 
 ##　利用方法
 cargo run -- --file <ファイルパス> [--hash <アルゴリズム>] [--output <出力先ファイル>]
 
-# 使用例
+## 使用例
 cargo run -- --file ./example.txt --hash sha512
 cargo run -- --file ./example.txt --hash md5 --output ./result.txt
 

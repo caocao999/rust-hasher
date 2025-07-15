@@ -21,12 +21,9 @@ fn main() {
 
     };
 
-
-    //----------test---------------
-    println!("{:?}",data);
-    println!("{}",result);
-
-    
-
-   
+    let out_file = args.output.unwrap_or_default();
+    if out_file != "" {
+        my_lib::output_file(&out_file,&result).unwrap();
+    }
+    println!("\nハッシュ値　 : {}\n",result);   
 }

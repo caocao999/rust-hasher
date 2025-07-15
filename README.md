@@ -10,8 +10,7 @@ SHA-256 / SHA-512 / MD5 を選択可能で、標準出力またはファイル�
    rustc --version
 
 ## プロジェクトディレクトリに移動し、ビルドします：
-   ```bash 
-   cargo build --release
+   `cargo build --release`
 
 ## 実行ファイルは target/release/hash.exe に生成されます（Windowsの場合）
 

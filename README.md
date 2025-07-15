@@ -18,12 +18,14 @@ SHA-256 / SHA-512 / MD5 を選択可能で、標準出力またはファイル�
 ## 実行ファイルは target/release/hash.exe に生成されます（Windowsの場合）
 
 ##　利用方法
+```
 cargo run -- --file <ファイルパス> [--hash <アルゴリズム>] [--output <出力先ファイル>]
-
+```
 ## 使用例
+```
 cargo run -- --file ./example.txt --hash sha512
 cargo run -- --file ./example.txt --hash md5 --output ./result.txt
-
+```
 
 ## File Hash Calculator (Rust)
 
